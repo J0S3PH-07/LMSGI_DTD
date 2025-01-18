@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog SYSTEM "esdev.act2.dtd">
+<catalog>
+    <!-- Llista d'actors -->
+    <llista_actors>
+        <actor id="actor1">
+            <nom>John Doe</nom>
+            <edat>45</edat>
+        </actor>
+        <actor id="actor2">
+            <nom>Jane Smith</nom>
+        </actor>
+        <actor id="actor3">
+            <nom>Michael Brown</nom>
+            <edat>30</edat>
+        </actor>
+    </llista_actors>
+
+    <!-- Llista de pel·lícules -->
+    <llista_pelicules>
+        <pelicula id="movie1">
+            <titol idioma="en">The Great Adventure</titol>
+            <director>John Director</director>
+            <any>2022</any>
+            <actors>
+                <actor_ref idref="actor1"/>
+                <actor_ref idref="actor2"/>
+            </actors>
+        </pelicula>
+        <pelicula id="movie2">
+            <titol idioma="es">La Gran Aventura</titol>
+            <director>Maria Garcia</director>
+            <any>2020</any>
+            <actors>
+                <actor_ref idref="actor3"/>
+            </actors>
+        </pelicula>
+        <pelicula id="movie3">
+            <titol idioma="fr">L'Aventure Magnifique</titol>
+            <director>Jean Dupont</director>
+            <any>2018</any>
+            <actors>
+                <actor_ref idref="actor1"/>
+                <actor_ref idref="actor3"/>
+            </actors>
+        </pelicula>
+    </llista_pelicules>
+
+    <!-- Llista de recomanacions -->
+    <llista_recomanacions_pelicules>
+        <recomanacio idref="movie1"/>
+        <recomanacio idref="movie3"/>
+    </llista_recomanacions_pelicules>
+</catalog>
